@@ -3,7 +3,7 @@
 \header {
   % Remove default LilyPond tagline
   tagline = ##f
-  title = "Chromatic Invention"
+  title = "Two-Part Invention"
   composer = "Nicole Woo"
 }
 

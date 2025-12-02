@@ -14,11 +14,11 @@ sopranoVoice = \relative c'' {
   r2 a4 | a2 gis4 | d'4 d2 |
   r4 c4\mp\< d | c4. b8 b4 | f'2.\mf |
   R2.*4 |
-  r2 e4\mf | d4 cis b | cis2. | cis8 cis~ cis4 d8( b) | cis4. r8 d4 |
+  r2 e4\mf | d4 cis b | cis2. | cis8 cis~ cis4 d8( b) | cis2.~ | cis4 r4 d4 |
   cis2 b4 | a2 a4 | a2 b8 gis | a2 r4 |
   cis4\cresc b cis | d2 e4 | fis4. fis8 fis4 | 
   \once \override TextSpanner.bound-details.left.text = \markup \upright \bold "rit."
-  a2.(\f\startTextSpan | f!4)\fermata\stopTextSpan  r4\fermata
+  a2.(\f\startTextSpan | f!4)\fermata\stopTextSpan  r4
   f8\mf f~ | f8 f f4 e8 d | a2 gis4 | b2 r4\fermata | 
   \tempo "a tempo" R2. |
   \time 4/4
@@ -30,11 +30,11 @@ sopranoVoice = \relative c'' {
   r2 d2 | c2. b4 | e1 |
   R1 |
   \time 3/4
-  d4\mf cis b | cis2 cis8 cis | cis2 d8( b) | cis4. r8 d4\mp |
-  cis2 b4 | a2 a4 | a2 b8( gis) | a2. |
-  r2 a4\p | a2 gis4 | b2. | r4 a b | a2 gis4 | d'2. |
+  d4\mp cis b | cis2 cis8 cis | cis2 d8( b) | cis2.~ | cis4 r4 d4 |
+  cis2 b4 | a2\< a4 | a2\mf\> b8( gis) | a2.\mp | \break
+  r2 a4\p | a2 gis4 | b2. | r4 a\< b | a2 gis4 | d'2.\mp |
   \time 4/4
-  r2 c2 | c2. b4 | d2 r | r2 c2\pp | c2. b4 | e2\fermata r2\fermata \fine
+  r2 c2\p | c2. b4 | d2 r | r2 c2 | c2. b4 | e2\fermata r2\fermata \fine
   
 }
 
@@ -45,7 +45,7 @@ verse = \lyricmode {
   And swal -- lows cir -- cling with their shim -- mer -- ing sound;
   
   
-  And frogs in the pools sing -- ing at night,
+  And frogs in the pools sing -- ing at __ night, __
   And wild plum trees in trem -- u -- lous white;
   
   
@@ -57,7 +57,7 @@ verse = \lyricmode {
   Will care at last when it is done.
   
   
-  Not one would mind, nei -- ther bird nor tree
+  Not one would mind, nei -- ther bird nor __ tree
   If man -- kind per -- ished ut -- ter -- ly;
   
   

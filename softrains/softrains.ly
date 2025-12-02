@@ -31,7 +31,7 @@ global = {
   \numericTimeSignature
   \time 3/4
   \accidentalStyle modern
-  \tempo "Delicately" 4=80
+  \tempo "Delicately" 4=88
   \set Staff.pedalSustainStyle = #'mixed
 }
 

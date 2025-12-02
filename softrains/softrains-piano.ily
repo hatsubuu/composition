@@ -32,24 +32,21 @@ right = \relative c'' {
   d8-- d-- d-- d-- d-- d-- |
   \time 4/4
   <d e> q q q q q q q | <d f> q q q q q q q |
-  <d e f> q q q q q q q | q q q q q q q q | 
-  R1 |
-  r8 q q q q q q q | q q q q q q q q |
-  R1 |
+  r <d e f> q q q q q q | q q q q q q q q | 
+  r q q q q q q q | q q q q q q q q |
   r8 <b c f>-. q-. q-. q2-- | r8 <b c e>-. q-. q-. q2-- |
-  R1 |
-  r8 <b c dis>-. q-. q-. q2-- | R1 |
+  r8 <b c dis>-. q-. q-. q2--\fermata | 
   e8-- e-- e-- e-- e-- e-- e-- e-- |
   \time 3/4
-  <d e> q q q q q | q q <cis e> q q q |
+  <d e>-- q-- q-- q-- q-- q-- | q q <cis e> q q q |
   q q q q q q | q q q q q q | q q q q q q | q q q q q q |
-  <d gis a>8 q q q q q | q q q q q q | q2.-> |
+  <d gis a>8 q q q q q | q q q q q q | q2.-- |
   R2. |
   r4 <f a>8-- q-- q4-- | r4 q8-- q-- q4~-- |
   q2. |
   r4 <e f a>8-- q-- q4-- | r4 q8-- q-- q4~-- |
+  q2. |
   \time 4/4
-  q1 |
   r4 <e f b>-- q-- r | r2 q4-- q~-- |
   q1 |
   r2 <e f c'>2~-- | q\fermata r\fermata \fine
@@ -62,16 +59,19 @@ dynamics = {
   \override DynamicText.X-offset = 0
   \override TextScript.Y-offset = -0.5
   s2.\p |
-  s2.*4 |
+  s2.*3 |
+  %\once \override TextScript.X-offset = -1
+  s2.-"l.v." |
   \time 4/4 
-  s1*5\mp
+  s1*4\mp
+  s1-"l.v." |
   s1\pp |
   s1*5-\markup \italic sim. |
   \time 3/4
   s2. |
-  s2.\mp |
+  s2. |
   s2.*2 |
-  s2.*2\mp\< |
+  s2.*2\< |
   s2.\mf |
   s2.\> |
   s2. |
@@ -79,27 +79,24 @@ dynamics = {
   s2.*2 |
   s2.*2\mp |
   s2.*6-\markup \italic sim. |
-  s2.*3\cresc |
+  s2.*3\< |
   s2.*2\mf |
   s2.*2\mf\> |
-  s2.\mp |
   s2.\p |
+  s2.\pp |
   \time 4/4
   s1*2-\markup \italic sim. |
-  s2 s\< | s\mp\> s\p |
+  s2 s\< | s\mp\> s\pp |
+  s2 s\< | s\mp\> s\pp |
+  s1*3 |
   s1 |
-  s2 s\< | s\mp\> s\p |
-  s1 |
-  s1*3\pp |
-  s1*2 |
-  s1\pp |
   \time 3/4 
-  s2.-\markup \italic sim.\< |
-  s2.\mp |
+  s2.\< |
+  s2.\mp-\markup \italic sim. |
   s2.*4 |
   s2.\< |
   s2.\mf\> |
-  s2.\mp |
+  s2.\p |
   s2. |
   s8 s8\pp s2 |
 }
@@ -133,16 +130,16 @@ left = \relative c' {
   \time 4/4
   R1*3 | 
   \clef bass
-  gis1~ | gis |
-  d1 | b~ | b |
-  d1 | b~ | b |
-  gis~ | gis | R1 |
+  gis1 | 
+  d1 | gis, | f' |
+  d1 | b2 gis\fermata |
+  R1 |
   \time 3/4
   R2. |
   <a a'>2.~-> | q2.~ | q2.~ | q2.~ | q2. |
-  <f! f'!>2.->( | <d d'>2.-> | <b b'>2.->) |
+  <f! f'!>2.->( | <d d'>2.-> | <b b'>2.--) |
   R2. |
-  R2.*5 |
+  R2.*6 |
   \time 4/4
-  R1*5 | R1\fermata \fine
+  R1*4 | R1\fermata \fine
 }
